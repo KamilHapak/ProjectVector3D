@@ -117,12 +117,12 @@ public class Vector3DTest {
     @Test
     public void testToString() {
         System.out.println("toString");
-        Vector3D instance = new Vector3D();
-        String expResult = "";
+        Vector3D instance = new Vector3D(1,2,3);
+        String expResult = "[1.0, 2.0, 3.0]";
         String result = instance.toString();
         assertEquals(expResult, result);
         // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        
     }
 
     /**
@@ -131,13 +131,13 @@ public class Vector3DTest {
     @Test
     public void testEquals() {
         System.out.println("equals");
-        Object anotherObject = null;
-        Vector3D instance = new Vector3D();
+        Object anotherObject = new Vector3D(1,3,3);
+        Vector3D instance = new Vector3D(1,2,3);
         boolean expResult = false;
         boolean result = instance.equals(anotherObject);
         assertEquals(expResult, result);
         // TODO review the generated test code and remove the default call to fail.
-        fail("The test case is a prototype.");
+        
     }
     
 }
